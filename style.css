@@ -1,70 +1,130 @@
      body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: rgb(197, 197, 197);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       background-color: rgb(197, 197, 197);
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
 
-        button {
-            width: 100px;
-            height: 100px;
-            margin-top: 12px;
-            background-color: #302f2e;
-            color: white;
-            cursor: pointer;
-            border-radius: 32px;
-            font-size: 3rem;
-            font-weight: bold;
-            border: none;
-            transition: all 0.2s ease;
-        }
+     button {
+       width: 100px;
+       height: 100px;
+       margin-top: 12px;
+       background-color: #302f2e;
+       color: white;
+       cursor: pointer;
+       border-radius: 32px;
+       font-size: 3rem;
+       font-weight: bold;
+       border: none;
+       transition: all 0.2s ease;
+     }
 
-        button:hover {
-            background-color: #5c5c5b;
-        }
-        button:active{
-            background-color: rgb(110, 110, 110);
-        }
+     button:hover {
+       background-color: #5c5c5b;
+     }
+
+     button:active {
+       background-color: rgb(110, 110, 110);
+     }
 
 
-        .operator-btn {
-            background-color: rgb(236, 117, 5);
-            transition: all 0.3s ease;
-        }
+     .operator-btn {
+       background-color: rgb(236, 117, 5);
+       transition: all 0.3s ease;
+     }
 
-        .operator-btn:hover {
-            background-color: rgb(253, 138, 31);
-        }
-        .operator-btn:active{
-            background-color: rgb(247, 154, 67);
-        }
+     .operator-btn:hover {
+       background-color: rgb(253, 138, 31);
+     }
 
-        #keys {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            padding: 25px;
-        }
+     .operator-btn:active {
+       background-color: rgb(247, 154, 67);
+     }
 
-        #calculator {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: black;
-            border-radius: 20px;
-            max-width: 500px;
-            overflow: hidden;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        }
+     #keys {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 10px;
+       padding: 25px;
+     }
 
-        #display {
-            width: 100%;
-            padding: 20px;
-            font-size: 5rem;
-            text-align: left;
-            border: none;
-            background-color: #302f2e;
-            color: white;
-            font-weight: bold;
-        }
+     #calculator {
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       background-color: black;
+       border-radius: 20px;
+       max-width: 500px;
+       overflow: hidden;
+       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     }
+
+     #display {
+       width: 100%;
+       padding: 20px;
+       font-size: 5rem;
+       text-align: left;
+       border: none;
+       background-color: #302f2e;
+       color: white;
+       font-weight: bold;
+     }
+
+     @media (max-width: 768px) {
+       #calculator {
+         max-width: 90%;
+       }
+
+       #display {
+         font-size: 3.5rem;
+         padding: 15px;
+       }
+
+       button {
+         width: 80px;
+         height: 80px;
+         font-size: 2.5rem;
+       }
+
+       #keys {
+         gap: 8px;
+         padding: 20px;
+       }
+     }
+
+     @media (max-width: 480px) {
+       #calculator {
+         max-width: 95%;
+       }
+
+       #display {
+         font-size: 2.5rem;
+         padding: 12px;
+       }
+
+       button {
+         width: 65px;
+         height: 65px;
+         font-size: 2rem;
+         border-radius: 20px;
+       }
+
+       #keys {
+         gap: 6px;
+         padding: 15px;
+       }
+     }
+
+     @media (max-width: 350px) {
+       #display {
+         font-size: 2rem;
+       }
+
+       button {
+         width: 55px;
+         height: 55px;
+         font-size: 1.6rem;
+       }
+     }
+/* --- fritzbwoi --- */
